@@ -1,0 +1,134 @@
+/* QuizDrawer.css */
+
+.bm-burger-button {
+  position: fixed;
+  width: 25px;
+  height: 20px;
+  left: 20px;
+  top: 25px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-menu {
+  position: fixed;
+  top: 70px; /* adjust to the height of the burger button */
+  left: 0;
+  width: 250px; /* adjust to your desired width */
+  height: calc(100vh - 60px); /* adjust to the height of the screen minus the burger button */
+  background-color: #4d4750;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.drawer-field {
+  margin-bottom: 15px;
+}
+
+.drawer-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #d1d1d1;
+}
+
+.drawer-field input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #923535;
+}
+
+.quiz-page {
+  display: flex;
+}
+
+.quiz-content {
+  margin-left: 250px; /* adjust based on your drawer width */
+  padding: 20px;
+  flex-grow: 1; /* Ensure it takes up the remaining space */
+}
+.bm-overlay {
+  display: none !important;
+}
+
+/* fields... */
+
+.drawer-field {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drawer-field:hover {
+  background-color: #ffc78c94;
+}
+
+.drawer-field label {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* components/quizCard.css */
+.quiz-card {
+  max-width: 600px;
+  margin-top: 52px;
+  width: 90%;
+  margin: 20px auto; /* Added top and bottom margin */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #d1a103;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.quiz-question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #373a47;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-option {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 1px solid #d4af37;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-option:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-3px);
+}
+
+.quiz-option:active {
+  background-color: #d4d4d4;
+  transform: translateY(0);
+}

@@ -1,0 +1,60 @@
+/* navbar.css */
+.dashboard-header {
+  background-color: transparent;
+  color: #080808;
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for better separation */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optional: Limits maximum width */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #120074;
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.dashboard-nav li {
+  margin-left: 20px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #070707;
+  font-size: 1em;
+}
+
+.dashboard-nav a:hover {
+  color: #540a0a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-nav li {
+    margin: 10px 0; /* Adds spacing between items */
+  }
+}

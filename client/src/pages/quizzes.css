@@ -1,0 +1,39 @@
+/* pages/quizPage.css */
+
+.quiz-page {
+  display: flex;
+}
+
+.quiz-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* QuizPage.css */
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.quiz-content {
+  margin-left: 250px; /* Adjust based on your drawer width */
+  padding: 20px;
+  width: 100%; /* Ensure it takes up full width */
+  text-align: center; /* Center the content */
+}
+
+.quiz-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 60%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the card */
+  margin-top: 10px;
+}

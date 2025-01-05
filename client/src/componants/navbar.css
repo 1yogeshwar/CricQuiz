@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand-x {
+
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #dbf753;
+}
+
+.navbar-toggler {
+  background: #fefcfc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: #dbf753;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.nav-item a:hover {
+  background-color: transparent;
+  border: #dbf753;
+  border-style: solid;
+}
+
+
+
+a.nav-link:hover {
+    color: rgb(255 254 254 / 80%);
+}
+
+.nav-item a.active {
+  border: 2px solid #dbf753;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #393838;
+    border-top: 2px solid white;
+    margin-top: 10px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 60%;
+    height: 60px;
+    overflow-x: auto;
+    transform: translateX(100%);
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+    height: auto;
+    overflow-x: visible;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    margin: 0 5px;
+  }
+}
+
+.page-content {
+  padding-top: 60px;
+}
